@@ -135,6 +135,34 @@
     footer h3 { color: #fff; margin-bottom: 16px; }
 
     footer p { max-width: 500px; }
+    
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero {
+  max-width: 520px;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-visual img {
+    margin-top: 32px;
+  }
+}
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 34px; }
@@ -155,11 +183,7 @@
       </div>
     </nav>
 
-    <div class="hero">
-      <h1>Boost Your Revenue with AdBoost360</h1>
-      <p>Publisher-First Ad network delivering UI/UX friendly formats, Dedicated Customer Support and Timely Payments.</p>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
+    
   </div>
 </header>
 
