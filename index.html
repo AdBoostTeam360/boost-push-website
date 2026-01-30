@@ -2,83 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AdBoost360 – Performance Ad Network & Monetization Platform</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdBoost360 – Publisher First Ad Network</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b4fa2;
+      --secondary: #0a1a33;
+      --light: #f5f9ff;
+      --text: #1e293b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #fff;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    nav img { height: 40px; }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+
+    .hero {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #64748b;
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      margin-bottom: 24px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #475569;
+      margin-bottom: 16px;
+    }
+
+    .features {
+      background: var(--light);
+    }
+
+    footer {
+      background: var(--secondary);
+      color: #cbd5e1;
+      padding: 60px 20px;
+    }
+
+    footer h3 { color: #fff; margin-bottom: 16px; }
+
+    footer p { max-width: 500px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 34px; }
+    }
+  </style>
 </head>
 <body>
 
-<header class="header">
+<header>
   <div class="container">
-    <h1 class="logo">AdBoost360</h1>
     <nav>
-      <a href="#products">Products</a>
-      <a href="#publishers">Publishers</a>
-      <a href="#advertisers">Advertisers</a>
-      <a href="#contact">Contact</a>
+      <img src="logo.png" alt="AdBoost360 Logo">
+      <div>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="https://login.adboost360.com" style="margin-left:24px; padding:10px 18px; border:1px solid #ffffff; border-radius:6px;">Publisher Login</a>
+      </div>
     </nav>
+
+    <div class="hero">
+      <h1>Boost Your Revenue with AdBoost360</h1>
+      <p>Publisher-first ad network delivering UI/UX friendly formats, dedicated customer support and timely payments.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <h2>Performance-Driven Ad Solutions for Publishers & Brands</h2>
-  <p>
-    AdBoost360 helps publishers monetize efficiently and advertisers
-    reach high-intent users across premium formats.
-  </p>
+<section id="products">
+  <div class="container">
+    <h2>Our Products</h2>
+    <p class="subtitle">Simple. Scalable. Publisher‑friendly monetization solutions.</p>
 
-  <div class="cta">
-    <a href="push-boost.html">Explore Push Boost</a>
-    <a href="#publishers" class="secondary">For Publishers</a>
+    <div class="grid">
+      <div class="card">
+        <img src="push-boost.png" alt="Push Boost">
+        <h3>Push Boost</h3>
+        <p>Free and unlimited push notification tool enabling publishers and networks to engage users and monetize simultaneously.</p>
+      </div>
+
+      <div class="card">
+        <img src="intelligent-boost.png" alt="Intelligent Boost">
+        <h3>Intelligent Boost</h3>
+        <p>Consulting-led strategy to unlock incremental revenues without disrupting existing monetization setups.</p>
+      </div>
+
+      <div class="card">
+        <img src="boost-units.png" alt="Boost Units">
+        <h3>Boost Up & Super Boost Units</h3>
+        <p>High-viewability ad format strategy designed to improve existing revenues by up to 20%.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="products" class="section">
-  <h3>Our Products</h3>
+<section id="why" class="features">
+  <div class="container">
+    <h2>Why Choose AdBoost360?</h2>
+    <p class="subtitle">Built with a publisher‑first approach.</p>
 
-  <div class="product-box">
-    <h4>🚀 Push Boost</h4>
-    <p>
-      Free & unlimited push notification platform that allows
-      publishers to send notifications and monetize them simultaneously.
-    </p>
-    <a href="push-boost.html">Learn more →</a>
+    <div class="grid">
+      <div class="card">
+        <h3>UI/UX Friendly Formats</h3>
+        <p>Our ad formats are designed to enhance user experience without being intrusive.</p>
+      </div>
+
+      <div class="card">
+        <h3>Dedicated Customer Support</h3>
+        <p>Hands-on support from onboarding to scale, ensuring smooth operations.</p>
+      </div>
+
+      <div class="card">
+        <h3>Timely Payments</h3>
+        <p>Reliable and transparent payment cycles you can trust.</p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="product-box">
-    <h4>📱 Display & Native Ad Consultancy</h4>
-    <p>
-      What would work the best for you? We help you understand your current set-up and help in adding incremental revenues
-    </p>
+<footer id="contact">
+  <div class="container">
+    <h3>Ready to Boost Your Revenue?</h3>
+    <p>Partner with AdBoost360 and monetize smarter, not harder.</p>
+    <p style="margin-top:16px;">📧 contact@adboost360.com</p>
   </div>
-</section>
-
-<section id="publishers" class="section light">
-  <h3>For Publishers</h3>
-  <ul>
-    <li>✔ Multiple monetization channels</li>
-    <li>✔ Fast approvals</li>
-    <li>✔ Weekly payouts</li>
-  </ul>
-</section>
-
-<section id="advertisers" class="section">
-  <h3>For Advertisers</h3>
-  <ul>
-    <li>✔ High-quality traffic</li>
-    <li>✔ Brand-safe inventory</li>
-    <li>✔ Performance-focused buying</li>
-  </ul>
-</section>
-
-<section id="contact" class="section light">
-  <h3>Contact</h3>
-  <p>Sales: <strong>contact@adboost360.com</strong></p>
-  
-</section>
-
-<footer class="footer">
-  © 2026 AdBoost360. All Rights Reserved.
 </footer>
 
 </body>
