@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AdBoost360 – Publisher First Ad Network</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --primary: #0b4fa2;
@@ -16,7 +14,6 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Inter', sans-serif;
       color: var(--text);
@@ -24,19 +21,10 @@
       line-height: 1.6;
     }
 
-    /* HEADER STRUCTURE */
     header {
-      background: #ffffff;
-    }
-
-    .header-top {
-      padding: 24px 20px 32px;
-    }
-
-    .header-hero {
-      background: linear-gradient(135deg, var(--secondary), var(--primary));
-      color: #ffffff;
-      padding: 80px 20px 100px;
+      background: linear-gradient(135deg, #0a1a33 0%, #0b4fa2 60%, #4fc3f7 100%);
+      color: #fff;
+      padding: 80px 20px 120px;
     }
 
     .container {
@@ -48,29 +36,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 60px;
     }
 
-    nav img {
-      height: 56px;
-    }
+    nav img { height: 40px; }
 
     nav a {
+      color: #fff;
       text-decoration: none;
       margin-left: 24px;
       font-weight: 500;
-      color: #0a1a33;
-    }
-
-    /* HERO */
-    .hero-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
     }
 
     .hero {
-      max-width: 520px;
+      max-width: 600px;
     }
 
     .hero h1 {
@@ -84,14 +63,9 @@
       opacity: 0.9;
     }
 
-    .hero-visual img {
-      width: 100%;
-      max-width: 560px;
-    }
-
     .btn {
       display: inline-block;
-      background: #ffffff;
+      background: #fff;
       color: var(--primary);
       padding: 14px 28px;
       border-radius: 8px;
@@ -99,7 +73,6 @@
       text-decoration: none;
     }
 
-    /* SECTIONS */
     section {
       padding: 80px 20px;
     }
@@ -123,7 +96,7 @@
     }
 
     .card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 16px;
       padding: 32px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -131,9 +104,8 @@
 
     .card img {
       width: 100%;
-      max-height: 260px;
+      max-height: 180px;
       object-fit: contain;
-      transform: scale(1.25);
       margin-bottom: 24px;
     }
 
@@ -144,6 +116,7 @@
 
     .card p {
       color: #475569;
+      margin-bottom: 16px;
     }
 
     .features {
@@ -156,108 +129,70 @@
       padding: 60px 20px;
     }
 
-    footer h3 {
-      color: #ffffff;
-      margin-bottom: 16px;
-    }
+    footer h3 { color: #fff; margin-bottom: 16px; }
 
-    footer p {
-      max-width: 500px;
-    }
+    footer p { max-width: 500px; }
 
-    /* MOBILE */
     @media (max-width: 768px) {
-      .hero-wrapper {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .hero-visual img {
-        margin-top: 32px;
-      }
+      .hero h1 { font-size: 34px; }
     }
   </style>
 </head>
-
 <body>
 
 <header>
+  <div class="container">
+    <nav>
+      <img src="logo.png" alt="AdBoost360 Logo">
+      <div>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="https://login.adboost360.com" style="margin-left:24px; padding:10px 18px; border:1px solid #ffffff; border-radius:6px;">Publisher Login</a>
+      </div>
+    </nav>
 
-  <!-- WHITE TOP NAV -->
-  <div class="header-top">
-    <div class="container">
-      <nav>
-        <img src="PNG-2-Photoroom.png" alt="AdBoost360 Logo">
-        <div>
-          <a href="#products">Products</a>
-          <a href="#why">Why Us</a>
-          <a href="#contact">Contact</a>
-          <a href="https://login.adboost360.com"
-             style="margin-left:24px; padding:10px 18px; border:1px solid #0a1a33; border-radius:6px;">
-            Publisher Login
-          </a>
-        </div>
-      </nav>
-    </div>
-  </div>
+    <div class="hero-wrapper">
+      <div class="hero">
+        <h1>Boost Your Revenue<br>with AdBoost360</h1>
+        <p>Publisher-first ad network providing UI/UX friendly formats, dedicated customer support, and timely payments.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
 
-  <!-- HERO -->
-  <div class="header-hero">
-    <div class="container">
-      <div class="hero-wrapper">
-
-        <div class="hero">
-          <h1>Boost Your Revenue<br>with AdBoost360</h1>
-          <p>
-            Publisher-first ad network delivering UI/UX friendly formats,
-            dedicated customer support and timely payments.
-          </p>
-          <a href="#contact" class="btn">Get Started</a>
-        </div>
-
-        <div class="hero-visual">
-          <img src="hero-illustration.png" alt="Boost Your Revenue Illustration">
-        </div>
-
+      <div class="hero-visual">
+        <img src="hero-illustration.png" alt="AdBoost360 Revenue Growth Illustration">
       </div>
     </div>
   </div>
-
 </header>
 
-<!-- PRODUCTS -->
 <section id="products">
   <div class="container">
     <h2>Our Products</h2>
-    <p class="subtitle">Simple. Scalable. Publisher-friendly monetization solutions.</p>
+    <p class="subtitle">Simple. Scalable. Publisher‑friendly monetization solutions.</p>
 
     <div class="grid">
       <div class="card">
-        <img src="push-boost.png" alt="Push Boost">
+        <img src="data:image/png;base64,REPLACE_WITH_BASE64_IMAGE" alt="Push Boost">
         <h3>Push Boost</h3>
-        <p>Free and unlimited push notification tool enabling publishers to engage users and monetize simultaneously.</p>
+        <p>Free and unlimited push notification tool enabling publishers and networks to engage users and monetize simultaneously.</p>
       </div>
 
       <div class="card">
-        <img src="intelligent-boost.png" alt="Intelligent Boost">
+        <img src="data:image/png;base64,REPLACE_WITH_BASE64_IMAGE" alt="Intelligent Boost">
         <h3>Intelligent Boost</h3>
-        <p>Consulting-led strategy to unlock incremental revenues without disrupting existing setups.</p>
+        <p>Consulting-led strategy to unlock incremental revenues without disrupting existing monetization setups.</p>
       </div>
 
       <div class="card">
-        <img src="boost-units.png" alt="Boost Units">
+        <img src="data:image/png;base64,REPLACE_WITH_BASE64_IMAGE" alt="Boost Units">
         <h3>Boost Up & Super Boost Units</h3>
-        <p>High-viewability ad formats designed to improve existing revenues by up to 20%.</p>
+        <p>High-viewability ad format strategy designed to improve existing revenues by up to 20%.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
 <section id="why" class="features">
   <div class="container">
     <h2>Why Choose AdBoost360?</h2>
@@ -267,13 +202,13 @@
       <div class="card">
         <img src="ui-ux-friendly.png" alt="UI/UX Friendly Formats">
         <h3>UI/UX Friendly Formats</h3>
-        <p>Formats designed to enhance user experience without intrusion.</p>
+        <p>Our ad formats are designed to enhance user experience without being intrusive.</p>
       </div>
 
       <div class="card">
-        <img src="dedicated-support.png" alt="Dedicated Support">
+        <img src="dedicated-support.png" alt="Dedicated Customer Support">
         <h3>Dedicated Customer Support</h3>
-        <p>Hands-on support from onboarding to scale.</p>
+        <p>Hands-on support from onboarding to scale, ensuring smooth operations.</p>
       </div>
 
       <div class="card">
@@ -285,14 +220,21 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer id="contact">
   <div class="container">
     <h3>Ready to Boost Your Revenue?</h3>
     <p>Partner with AdBoost360 and monetize smarter, not harder.</p>
     <p style="margin-top:16px;">📧 contact@adboost360.com</p>
+
+    <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.15); font-size:14px; color:#94a3b8;">
+      © <span id="year"></span> AdBoost360. All rights reserved.
+    </div>
   </div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
