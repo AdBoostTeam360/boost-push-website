@@ -24,7 +24,7 @@
       line-height: 1.6;
     }
 
-    /* HEADER STRUCTURE */
+    /* HEADER */
     header {
       background: #ffffff;
     }
@@ -165,7 +165,7 @@
       max-width: 500px;
     }
 
-    /* MOBILE */
+    /* MOBILE HERO */
     @media (max-width: 768px) {
       .hero-wrapper {
         flex-direction: column;
@@ -178,6 +178,25 @@
 
       .hero-visual img {
         margin-top: 32px;
+      }
+    }
+
+    /* 🔥 MOBILE NAV FIX (NO CUTTING) */
+    @media (max-width: 768px) {
+      .header-top nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .header-top nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-top nav a {
+        margin: 8px 0;
       }
     }
   </style>
@@ -291,17 +310,16 @@
     <h3>Ready to Boost Your Revenue?</h3>
     <p>Partner with AdBoost360 and monetize smarter, not harder.</p>
     <p style="margin-top:16px;">📧 contact@adboost360.com</p>
+
     <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.15); font-size:14px; color:#94a3b8;">
-© <span id="year"></span> AdBoost360. All rights reserved.
+      © <span id="year"></span> AdBoost360. All rights reserved.
+    </div>
   </div>
-</div>
 </footer>
 
-
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 
 </body>
 </html>
